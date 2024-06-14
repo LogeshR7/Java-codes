@@ -19,7 +19,7 @@ public class Leaner{
 		System.out.println(salary);
 		String gender = "male";
 		System.out.println(gender);
-		
+		logesh
 		
 	}
 }
