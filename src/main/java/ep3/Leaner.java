@@ -7,19 +7,17 @@ public class Leaner{
 		System.out.println(age);
 		float weight = 70.5f;
 		System.out.println(weight);
-		long phonNumber = 7708681908l;
-		System.out.println(phonNumber);
-		double height = 70.55;
-		System.out.println(height);
-		int RegNumber = 251106;
-		System.out.println(RegNumber);
-		char intial = 'A';
-		System.out.println(intial);
+		double Height = 165.5;
+		System.out.println(Height);
 		short salary = 10000;
 		System.out.println(salary);
+		char intial = 'A';
+		System.out.println(intial);
+		long PhoneNumber = 7708681908l;
+		System.out.println(PhoneNumber);
+		int RegNumber = 251106;
+		System.out.println(RegNumber);
 		String gender = "male";
-		System.out.println(gender);
-		logesh
-		
+		System.out.println(gender);			
 	}
 }
