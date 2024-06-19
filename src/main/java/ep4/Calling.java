@@ -22,7 +22,7 @@ public static void main(String[] args) {
   System.out.println(finalprize);
    
    int milliage = mt.carmilliage();
-   System.out.println(milliage);
+   System.out.println(milliage); 
    
     
 }
