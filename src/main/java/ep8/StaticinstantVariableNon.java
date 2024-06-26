@@ -1,3 +1,4 @@
+
 package ep8;
 
 public class StaticinstantVariableNon {
