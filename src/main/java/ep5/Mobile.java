@@ -30,7 +30,7 @@ public class Mobile {
 		Mobile mb = new Mobile();
 		mb.MobileType();
 		mb.MobileBrand();
-		mb.dail("oppo");
+		mb.dail(251214555,'A');
 		
 	}
 

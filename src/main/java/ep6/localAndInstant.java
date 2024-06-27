@@ -1,3 +1,4 @@
+
 package ep6;
 
 public class localAndInstant {
@@ -24,7 +25,7 @@ public class localAndInstant {
 		localAndInstant ub = new localAndInstant();
 		ub.name("logesh", "logesh","hin");
 		
-		int bim = ub.number();
+		//int bim = ub.number();
 		
 		System.out.println(ub.number()); //note this point
 		

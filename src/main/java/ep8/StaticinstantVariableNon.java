@@ -3,8 +3,8 @@ package ep8;
 
 public class StaticinstantVariableNon {
 	
-	int x;
-	static int y;
+	int x;// belong to the function
+	static int y;  //belong to the class
 	
 	public void  incrment() {
 		x++;
