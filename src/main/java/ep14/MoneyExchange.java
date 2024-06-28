@@ -13,7 +13,7 @@ public static void main(String[] args)  {
 	driver.get("https://uat.moneychange.dollarex.com.sg/login");
 	driver.manage().window().maximize();
 	driver.findElement(By.xpath("//input[@name='login']")).sendKeys("dosth");
-	driver.findElement(By.xpath("//input[@name='password']")).sendKeys("itsmedosth1");
+	driver.findElement(By.xpath("//input[@name='password']")).sendKeys("itsmedosth");
 	driver.findElement(By.xpath("//button[text()='Login']")).click();
 	driver.findElement(By.xpath("//i[@class='i-Lock']")).click();
 	
