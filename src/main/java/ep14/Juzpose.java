@@ -12,7 +12,7 @@ public class Juzpose {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://juzpos.upc.org/login");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("durai");  //attribute typr link text
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("durai");  //attribute type link text
 		driver.findElement(By.name("password")).sendKeys("Mani1206*");
 		driver.findElement(By.xpath("//button[text()='Sign In']")).click();            //text link text
 		driver.findElement(By.xpath("//button[text()='Logout']")).click();
