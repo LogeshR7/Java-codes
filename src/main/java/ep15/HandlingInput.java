@@ -12,7 +12,7 @@ public class HandlingInput {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://letcode.in/edit");
-		driver.manage().window().maximize();
+		driver.manage().window().maximize(); 
 		
 		
 		//Enter you full name
