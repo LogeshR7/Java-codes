@@ -21,11 +21,15 @@ public class Navigationcodes {
 		System.out.println(driver.getCurrentUrl());
 		
 		 
-		 driver.navigate().back(); Thread.sleep(3000); driver.navigate().refresh();
-		 Thread.sleep(3000); driver.navigate().forward(); Thread.sleep(3000);
+		 driver.navigate().back(); 
+		 Thread.sleep(3000); 
+		 driver.navigate().refresh();
+		 Thread.sleep(3000); 
+		 driver.navigate().forward(); 
+		 Thread.sleep(3000);
 		 driver.navigate().to("https://letcode.in/signin");
 		
-
+//Call using object
 		Navigation nav = driver.navigate();
 		nav.back();
 		nav.forward();
