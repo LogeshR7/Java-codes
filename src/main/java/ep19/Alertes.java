@@ -1,5 +1,7 @@
 package ep19;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +17,7 @@ public class Alertes {
 		driver.get("https://letcode.in/alert");
 		
 		//Simple alert
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//button[text()='Simple Alert']")).click();
 		Alert print =driver.switchTo().alert();
 		String text =print.getText();
