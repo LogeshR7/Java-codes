@@ -33,14 +33,14 @@ public class HomeWorkFrame {
 		driver.switchTo().frame(frame2);
 		driver.findElement(By.xpath("//input[@name='mytext2']")).sendKeys("Logesh frame2");
 
-		
+
 		//Screenshot
-		/*
-		 * TakesScreenshot xyz= (TakesScreenshot)driver; File cc=
-		 * xyz.getScreenshotAs(OutputType.FILE); File descc=new
-		 * File("C:\\Users\\ocs new\\OneDrive\\Pictures\\Camera Roll/logesh.jpg");
-		 * FileUtils.copyFile(cc, descc);
-		 */		
+
+		TakesScreenshot xyz= (TakesScreenshot)driver; 
+		File cc=xyz.getScreenshotAs(OutputType.FILE); 
+		File descc=new File("C:\\Users\\ocs new\\OneDrive\\Pictures\\Camera Roll/logesh.jpg");
+		FileUtils.copyFile(cc, descc);
+
 
 		//Frame 3
 		driver.switchTo().defaultContent();
@@ -49,9 +49,13 @@ public class HomeWorkFrame {
 		driver.findElement(By.xpath("//input[@name='mytext3']")).sendKeys("jaii");
 
 		//inner frame pending
-
-
-
+		driver.switchTo().frame(0);
+		driver.findElement(By.xpath("//span[text()='Hi, I am the UI.Vision IDE']")).click();
+		driver.findElement(By.xpath("//span[text()='Web Testing']")).click();
+		driver.findElement(By.xpath("(//span[@class='l4V7wb Fxmcue'])[2]")).click();
+		driver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']")).sendKeys("lokkejai");
+		driver.findElement(By.xpath("//textarea[@class='KHxj8b tL9Q4c']")).sendKeys("sri");
+		driver.findElement(By.xpath("//span[text()='Submit']")).click();
 
 
 		//Frame 4
@@ -65,7 +69,7 @@ public class HomeWorkFrame {
 		WebElement frame5=driver.findElement(By.xpath("//frame[@src='frame_5.html']"));
 		driver.switchTo().frame(frame5);
 		driver.findElement(By.xpath("//input[@name='mytext5']")).sendKeys("jai");
-		//driver.findElement(By.linkText("https://a9t9.com")).click();
+		driver.findElement(By.linkText("https://a9t9.com")).click();
 
 
 
