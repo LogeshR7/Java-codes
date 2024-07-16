@@ -1,5 +1,7 @@
 package ep14;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,7 +29,7 @@ public class HanifaKL {
 		//driver.findElement(By.xpath("//button[@name='purchase_button']")).click(); //Insert
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//i[@title='View']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()=' Back']")).click();
 		Thread.sleep(2000);
 		//Stock
@@ -35,12 +37,29 @@ public class HanifaKL {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
 		Thread.sleep(2000);
-		//driver.findElement(By.xpath("//i[@class='fa fa-list-alt']")).click();
-		//Thread.sleep(5000);
-		//driver.findElement(By.xpath("(//button[@name='purchase_button'])[2]")).click(); //this is redirecting to next page so not working need to study
+		driver.findElement(By.xpath("//i[@class='fa fa-list-alt']")).click();
+		Thread.sleep(2000);
+		//switch driver
+		String parwin=driver.getWindowHandle();
+		Set<String> allwin=driver.getWindowHandles();
+
+		for(String eachwinid:allwin){
+		if(!parwin.equals(eachwinid)){
+		driver.switchTo().window(eachwinid);
+		}
+
+		}
+		
+		driver.findElement(By.xpath("(//button[@name='purchase_button'])[2]")).click(); //this is redirecting to next page so not working need to study
 		driver.findElement(By.xpath("//span[text()='Stock']")).click();   
 		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
+		
+		
+		
 		//Stock adjustment
+		driver.findElement(By.xpath("//span[text()='Stock']")).click();
 		driver.findElement(By.id("stock_adjust")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//i[@title='View']")).click();
@@ -48,12 +67,12 @@ public class HanifaKL {
 		driver.findElement(By.xpath("//button[@name='purchase_button']")).click();
 		Thread.sleep(1000);
 		//Report
-		driver.findElement(By.xpath("//i[@class='icon-bar-chart']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.linkText("Low Stock Report")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//a[text()=' Back']")).click();
-		Thread.sleep(2000);
+		//driver.findElement(By.xpath("//i[@class='icon-bar-chart']")).click();
+		//Thread.sleep(2000);
+		//driver.findElement(By.linkText("Low Stock Report")).click();
+		///Thread.sleep(3000);
+		//driver.findElement(By.xpath("//a[text()=' Back']")).click();
+		//Thread.sleep(2000);
 		//Logout
 		driver.findElement(By.xpath("//i[@class='fa fa-power-off']")).click();
 		
