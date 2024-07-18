@@ -18,6 +18,9 @@ public class Leaner{
 		int RegNumber = 251106;
 		System.out.println(RegNumber);
 		String gender = "male";
-		System.out.println(gender);			
+		System.out.println(gender);
+		
+		
+	
 	}
 }
