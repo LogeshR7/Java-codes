@@ -30,7 +30,7 @@ public class RemitAndDrop{
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//span[@class='checkmark'])[2]")).click();
 
-		//Beni Screening
+		//Benin Screening
 		WebElement path =driver.findElement(By.xpath("//select[@name='beneficairy_screening']"));
 		Select bene =new Select(path);
 		bene.selectByValue("1");
@@ -41,12 +41,12 @@ public class RemitAndDrop{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//span[@class='checkmark'])[50]")).click();
 		Thread.sleep(1000);
-		//alert foe more trans
+		//alert foe more tans
 		driver.findElement(By.xpath("//button[text()='Yes']")).click();
 
 		//remark
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//button[@class='close'])[2]")).click();
+		//driver.findElement(By.xpath("(//button[@class='close'])[2]")).click();
 
 		//originator screening
 		WebElement org =driver.findElement(By.xpath("//select[@name='orginator_screening']"));
@@ -58,7 +58,7 @@ public class RemitAndDrop{
 		Select Income =new Select (sqi);
 		Income.selectByIndex(5);
 
-		//orginator
+		//Originator
 		driver.findElement(By.xpath("//input[@class='same_customer_as_orginator']")).click();
 
 
@@ -67,7 +67,7 @@ public class RemitAndDrop{
 		Select pur=new Select (purpose);
 		pur.selectByIndex(3);
 		
-		//Transation detail
+		//Transaction detail
 		//Currency
 		driver.findElement(By.xpath("//input[@placeholder='Enter Currency Code']")).sendKeys("MYR");
 		
