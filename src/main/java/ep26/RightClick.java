@@ -22,6 +22,7 @@ public class RightClick {
 		WebElement ele=	driver.findElement(By.id("div01"));
 		Actions bulider =new Actions(driver);
 		bulider.contextClick(ele).perform();
+		
 
 	}
 
