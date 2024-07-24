@@ -39,7 +39,7 @@ public class RemitAndDrop{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//span[@id='basic-addon2'])[5]")).click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//span[@class='checkmark'])[50]")).click();
+		driver.findElement(By.xpath("(//span[@class='checkmark'])[51]")).click();
 		Thread.sleep(1000);
 		//alert foe more tans
 		driver.findElement(By.xpath("//button[text()='Yes']")).click();
