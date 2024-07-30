@@ -16,6 +16,11 @@ public class Calling {
 	System.out.println(bank.Lifetimecard());
 	
 	
+	RBI worldrbi=new AXIS();//reference variable ,,,this is interface so we can't create object
+	worldrbi.carloan();
+	RBI.homeloan();//Static function so we call using class name
+	
+	
 	
 	}
 	

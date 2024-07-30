@@ -7,6 +7,15 @@ public interface RBI {
 	public void aadharManidory();
 	
 	public boolean  PanMandtory();
+	
+	static void homeloan() {
+		System.out.println("homeloannnn free");
+	}
+	
+	default void carloan() {
+		System.out.println("carloan vaga vaketu ponga");
+		
+	}
 		
 	
 }

@@ -7,6 +7,7 @@ public class bike extends Vehicle{
 	}
 	
 	public void brake() {
+		super.brake();//super is used to call class from parent
 		System.out.println("b------Brake applied");
 	}
 	
