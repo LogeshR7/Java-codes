@@ -1,5 +1,6 @@
 package ep27;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -29,6 +30,15 @@ public class ListSelect {
 		System.out.println(myhero.isMultiple());
 		myhero.selectByIndex(0);
 		myhero.selectByValue("ta");
+		myhero.selectByVisibleText("Batman");
+		List<WebElement>villanda=myhero.getAllSelectedOptions();
+		for (WebElement myvilalan : villanda) {
+			System.out.println(myvilalan.getText());
+			
+		}
+		
+		
+		
 
 		//Select the last programming language and print all the options //Need to study loop for print all the option
 		WebElement languvages= driver.findElement(By.xpath("//select[@ID='lang']"));
@@ -36,6 +46,7 @@ public class ListSelect {
 		Program.selectByVisibleText("Python");
 		WebElement sys=Program.getFirstSelectedOption();
 		System.out.println(sys.getText());
+	
 
 		//Select India using value & print the selected value
 		WebElement Country=driver.findElement(By.xpath("//select[@id='country']"));
