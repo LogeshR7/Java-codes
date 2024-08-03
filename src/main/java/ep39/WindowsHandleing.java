@@ -1,12 +1,13 @@
 package ep39;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -47,7 +48,20 @@ public class WindowsHandleing {
 	    driver.switchTo().window(list.get(0));
 	    System.out.println(driver.getCurrentUrl());
 	    
+	    
+	    //Click on the Muiltiple windows button
+	    driver.get("https://letcode.in/windows");
+	    driver.findElement(By.xpath("//button[@id='multi']")).click();
+	    Set<String>see=driver.getWindowHandles();
+	   Iterator<String> mm=see.iterator();
+	   
+	   while (mm.hasNext()) {
+		  
+		   driver.switchTo().window(mm.next());
+		  
+		   System.out.println(driver.getTitle());
 		
+	}
 		
 		
 		
