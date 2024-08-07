@@ -46,7 +46,7 @@ public class testleaf {
 			if (!close.equals(parentwindow)) {
 				driver.switchTo().window(close);
 				driver.close();
-				
+			
 			}
 			
 		}
