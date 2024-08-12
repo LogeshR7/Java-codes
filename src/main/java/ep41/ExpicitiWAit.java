@@ -31,7 +31,7 @@ public class ExpicitiWAit {
 		driver.switchTo().alert().accept();
 		
 	
-		//invisibilityText
+		//invisibilityText/visibility
 		driver.manage().window().maximize();
 		driver.get("https://letcode.in/");
 		driver.findElement(By.linkText("Log in")).click();
@@ -43,7 +43,7 @@ public class ExpicitiWAit {
 		System.out.println(Until);
 		driver.findElement(By.linkText("Sign out")).click();
 		
-		//visibility
+		//titleContains
 		driver.get("https://www.flipkart.com/");
 		driver.findElement(By.xpath("//span[text()='Login']")).click();
 		WebElement Electronic=driver.findElement(By.xpath("//span[text()='Electronics']"));
