@@ -1,5 +1,6 @@
 package ep10;
 
+
 public class Staticfunction {
 	
 	public static void eat() {

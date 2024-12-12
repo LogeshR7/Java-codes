@@ -34,9 +34,8 @@ public class Hanifascreen {
 	 File bmw = new File("F:\\\\aljemi.juzapps.com./Lokkushot2.jpg");
 	 FileUtils.copyFile(vabule, bmw);
 	   
-	   
-	   
-	   
+	 
+	 
 	   driver.quit();
 	   
 	   
