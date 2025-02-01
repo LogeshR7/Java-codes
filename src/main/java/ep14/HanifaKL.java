@@ -14,6 +14,7 @@ public class HanifaKL {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://haniffakl.asuscomm.com:2311/Demo/");
 		driver.manage().window().maximize();
+		
 		//Login
 		driver.findElement(By.name("email")).sendKeys("durai");
 		Thread.sleep(1000);
@@ -22,6 +23,7 @@ public class HanifaKL {
 		driver.findElement(By.xpath("//label[@id='remembermelbl']")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
 		//Purchase
 		driver.findElement(By.linkText("Purchase")).click();
 		Thread.sleep(2000);
@@ -32,6 +34,7 @@ public class HanifaKL {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()=' Back']")).click();
 		Thread.sleep(2000);
+		
 		//Stock
 		driver.findElement(By.xpath("//span[text()='Stock']")).click();
 		Thread.sleep(2000);
@@ -39,6 +42,7 @@ public class HanifaKL {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//i[@class='fa fa-list-alt']")).click();
 		Thread.sleep(2000);
+		
 		//switch driver
 		String parwin=driver.getWindowHandle();
 		Set<String> allwin=driver.getWindowHandles();
@@ -66,6 +70,8 @@ public class HanifaKL {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[@name='purchase_button']")).click();
 		Thread.sleep(1000);
+		
+		
 		//Report
 		//driver.findElement(By.xpath("//i[@class='icon-bar-chart']")).click();
 		//Thread.sleep(2000);
@@ -73,7 +79,11 @@ public class HanifaKL {
 		///Thread.sleep(3000);
 		//driver.findElement(By.xpath("//a[text()=' Back']")).click();
 		//Thread.sleep(2000);
-		//Logout
+		
+		
+		
+		
+	//Logout Screen Full
 		driver.findElement(By.xpath("//i[@class='fa fa-power-off']")).click();
 		
 		

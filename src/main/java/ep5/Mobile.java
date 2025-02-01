@@ -11,7 +11,7 @@ public class Mobile {
 	}
 	
 	public void dail(int number , String name) {
-		System.out.println("Dailed - " + number + name);
+		System.out.println("Dailed - " + number +"  "+ name);
 	}
 	
 	public void dail(long Phonenumber , char firstletter) {
@@ -30,8 +30,9 @@ public class Mobile {
 		Mobile mb = new Mobile();
 		mb.MobileType();
 		mb.MobileBrand();
-		mb.dail("251214555");
-		
+		mb.dail(251,"logsh");	
+	
 	}
+	
 
 }

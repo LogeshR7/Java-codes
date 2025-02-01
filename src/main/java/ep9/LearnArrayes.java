@@ -8,29 +8,31 @@ public class LearnArrayes {
 	
 	public static void main(String[] args) {
 		
-		String[] fruit={"mango","papay","orange","pineapple","pears","apple"};
+		String[]fruit={"mango","papay","orange","pineapple","pears","apple"};
 		System.out.println(fruit[4]);
 		System.out.println(fruit.length);
 		System.out.println(fruit[fruit.length-1]);
 		System.out.println(Arrays.toString(fruit));
 		
-		for(int i=0;i<fruit.length;i++){     //loop condition for print one by one
-		System.out.println(fruit[i]);
-			}
+		for(int i=0;i<fruit.length;i++) {
+			System.out.println(fruit[i]);
+		}
 		
-int [] sqence = new int [4];
-sqence[0]=9;
-sqence[1]=10;
-sqence[2]=11;
-sqence[3]=14;
+		String vegtable[]=new String [4];
+		vegtable[0]="logveg";
+		vegtable[1]="carrot";
+	    vegtable[2]="benas";
+	    vegtable[3]="lady fingure";
+	    //vegtable[4]="pavaka";
+	    //vegtable[5]="KOvakai";
+		
+System.out.println(Arrays.toString(vegtable));
+System.out.println(vegtable.length);
+System.out.println(vegtable[vegtable.length-1]);
+System.out.println(vegtable[2]);
 
-System.out.println(Arrays.toString(sqence));
-System.out.println(sqence.length);
-System.out.println(sqence[sqence.length-1]);
-System.out.println(sqence[2]);
-
-for(int l=0;l<sqence.length;l++) {  //loop condition
-	System.out.println(sqence[l]);
+for(int l=0;l<vegtable.length;l++) {  //loop condition
+	System.out.println(vegtable[l]);
 }
 
 	}

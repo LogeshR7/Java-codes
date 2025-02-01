@@ -18,8 +18,9 @@ public class RightClick {
 		WebElement dv =driver.findElement(By.xpath("//iframe[@id='iframeResult']"));
 		driver.switchTo().frame(dv);
 
-		//hover
+		//hover right click
 		WebElement ele=	driver.findElement(By.id("div01"));
+		
 		Actions bulider =new Actions(driver);
 		bulider.contextClick(ele).perform();
 		

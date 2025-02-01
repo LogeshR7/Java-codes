@@ -37,7 +37,7 @@ public class LeaqrnCOnstractor {
 	
 
 public static void main(String[] args) {
-	LeaqrnCOnstractor mt = new LeaqrnCOnstractor(25,"logesk",22.5);
+	LeaqrnCOnstractor mt = new LeaqrnCOnstractor(22,"logesh",22.2);
 	mt.number();
 	
 	LeaqrnCOnstractor mt1 = new LeaqrnCOnstractor(26);
